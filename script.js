@@ -57,7 +57,7 @@ function checkWinner() {
         let [a, b, c] = pattern;
         if (box[a].innerHTML === box[b].innerHTML && box[b].innerHTML === box[c].innerHTML && box[a].innerHTML !== '') {
             winMsg.innerHTML = `Player ${box[a].innerHTML} is the winner`
-            console.log(`Player ${box[a].innerHTML} is the winner`);
+            // console.log(`Player ${box[a].innerHTML} is the winner`);
             disableAll();
         }
     }
